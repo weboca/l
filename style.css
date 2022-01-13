@@ -1,0 +1,105 @@
+/* averia-libre-regular - latin */
+@font-face {
+  font-family: 'Averia Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/averia-libre-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/averia-libre-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/averia-libre-v9-latin-regular.woff2") format("woff2"), url("fonts/averia-libre-v9-latin-regular.woff") format("woff"), url("fonts/averia-libre-v9-latin-regular.ttf") format("truetype"), url("fonts/averia-libre-v9-latin-regular.svg#AveriaLibre") format("svg");
+  /* Legacy iOS */
+}
+
+body {
+  font-family: Averia Libre;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  height: 60px;
+  background: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  height: calc(100vh - 60px);
+  background: lightcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-h3 {
+  font-size: 34px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 3px;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  80% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  80% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.load {
+  display: block;
+  width: 40px;
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/*# sourceMappingURL=style.css.map */
